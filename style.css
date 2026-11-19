@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #F8F6F0;
+  color: #30332E;
+}
+
+.announcement {
+  background-color: #30332E;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #F8F6F0;
+}
+
+.logo {
+  text-decoration: none;
+  color: #30332E;
+  font-weight: bold;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.brand-tagline {
+  font-size: 12px;
+  font-weight: normal;
+  color: #30332E;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #30332E;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #F8F6F0;
+  background-color: #30332E;
+}
+
+.hero {
+  display: flex;
+  align-items: top;
+  text-align: left;
+  padding: 80px;
+  color: #30332E;
+  background-image: url('images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 550px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-eyebrow {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.hero-content p:not(.hero-eyebrow) {
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 450px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #30332E;
+  color: #F8F6F0;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: #F8F6F0;
+  color: #30332E;
+  border: 1px solid #30332E;
+}
+
+#products {
+  padding: 50px;
+  background-color: #F8F6F0;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-header {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  list-style: none;
+}
+
+.product-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+  padding: 20px 15px;
+}
+
+.product-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #30332E;
+  margin-bottom: 15px;
+}
+
+.product-info p:not(.product-price) {
+  font-size: 14px;
+  color: #606060;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  min-height: 48px;
+}
+
+.product-info button {
+  width: 100%;
+  padding: 10px;
+  background-color: #30332E;
+  color: #F8F6F0;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.product-info button:hover {
+  background-color: #F8F6F0;
+  color: #30332E;
+  border: 1px solid #30332E;
+}
+
+#about {
+  padding: 50px;
+  background-color: #FFFFFF;
+}
+
+#about .section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#about-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+  border-bottom: 2px solid #30332E;
+  display: inline-block;
+  color: #30332E;
+  padding: 2px;
+  border-radius: 15px;
+}
+
+#about .section-header p {
+  font-size: 14px;
+  color: #606060;
+}
+
+#about > p {
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 10px auto;
+  text-align: center;
+  background-color: #F8F6F0;
+  padding: 30px 50px;
+  border-radius: 10px;
+}
+
+#contact {
+  padding: 5px;
+  background-color: #30332E;
+  color: #F8F6F0;
+  text-align: center;
+}

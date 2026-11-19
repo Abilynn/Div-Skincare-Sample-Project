@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glow & Co. | Skincare Essentials</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <header>
@@ -14,13 +17,13 @@
     </p>
 
     <nav aria-label="Main Navigation">
-      <a href="#" class="logo">
+      <a href="#home" class="logo">
         <span class="brand-name">Glow & Co.</span>
         <span class="brand-tagline">Skincare Essentials</span>
       </a>
 
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#products">Products</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -31,7 +34,7 @@
   <main class="main">
     <section id="home" class="hero">
       <div class="hero-content">
-        <p>ELEVATED SKINCARE. INTENTIONAL LIVING.</p>
+        <p class="hero-eyebrow">ELEVATED SKINCARE. INTENTIONAL LIVING.</p>
 
         <h1>YOUR KIND OF GLOW</h1>
 
@@ -41,17 +44,10 @@
 
         <a href="#products" class="btn">Shop Now</a>
       </div>
-
-      <figure class="hero-image">
-        <img
-          src="images/hero.jpg"
-          alt="Skincare products arranged in a natural, minimalist setting"
-        >
-      </figure>
     </section>
 
     <section id="products" aria-labelledby="products-heading">
-       <header class="section-header">
+      <header class="section-header">
         <h2 id="products-heading">Featured Products</h2>
         <p>Latest arrivals and bestsellers.</p>
       </header>
@@ -61,86 +57,102 @@
         <li>
           <article class="product-card">
             <figure>
-              <img
-                src="images/product1.jpg"
-                alt="SPF 50 sunscreen stick"
-              >
+              <img src="images/product1.jpg" alt="SPF 50 sunscreen stick">
             </figure>
 
-            <h3>SPF 50 Sunscreen Stick</h3>
+            <div class="product-info">
+              <h3>SPF 50 Sunscreen Stick</h3>
 
-            <p>
-              Protects against harmful UV rays with broad-spectrum coverage.
-            </p>
+              <p>
+                Protects against harmful UV rays with broad-spectrum coverage.
+              </p>
 
-            <p class="product-price">
-              <data value="12000">₦12,000.00</data>
-            </p>
-            
-            <button type="button">Add to Cart</button>
+              <p class="product-price">
+                <data value="12000">₦12,000.00</data>
+              </p>
+
+              <button type="button">Add to Cart</button>
+            </div>
           </article>
         </li>
 
         <li>
           <article class="product-card">
             <figure>
-              <img
-                src="images/product2.jpg"
-                alt="Moisturizing body cream"
-              >
+              <img src="images/product2.jpg" alt="Moisturizing body cream">
             </figure>
 
-            <h3>Moisturizing Body Cream</h3>
+            <div class="product-info">
+              <h3>Moisturizing Body Cream</h3>
 
-            <p>Hydrates and nourishes your skin all day long.</p>
+              <p>Hydrates and nourishes your skin all day long.</p>
 
-            <p class="product-price">
-              <data value="12500">₦12,500.00</data>
-            </p>
+              <p class="product-price">
+                <data value="12500">₦12,500.00</data>
+              </p>
 
-            <button type="button">Add to Cart</button>
+              <button type="button">Add to Cart</button>
+            </div>
           </article>
         </li>
 
         <li>
           <article class="product-card">
             <figure>
-              <img
-                src="images/product3.jpg"
-                alt="Moisturizing face cream"
-              >
+              <img src="images/product3.jpg" alt="Moisturizing face cream">
             </figure>
 
-            <h3>Moisturizing Face Cream</h3>
+            <div class="product-info">
+              <h3>Moisturizing Face Cream</h3>
 
-            <p>Hydrates and nourishes your face all day long.</p>
+              <p>Hydrates and nourishes your face all day long.</p>
 
-            <p class="product-price">
-              <data value="13500">₦13,500.00</data>
-            </p>
+              <p class="product-price">
+                <data value="13500">₦13,500.00</data>
+              </p>
 
-            <button type="button">Add to Cart</button>
+              <button type="button">Add to Cart</button>
+            </div>
           </article>
         </li>
 
         <li>
           <article class="product-card">
             <figure>
-              <img
-                src="images/product4.jpg"
-                alt="Charcoal skincare product set"
-              >
+              <img src="images/product4.jpg" alt="Charcoal skincare product set">
             </figure>
 
-            <h3>Charcoal Full Set</h3>
+            <div class="product-info">
+              <h3>Charcoal Full Set</h3>
 
-            <p>Deep cleans and detoxifies your skin.</p>
+              <p>Deep cleans and detoxifies your skin.</p>
 
-            <p class="product-price">
-              <data value="50000">₦50,000.00</data>
-            </p>
+              <p class="product-price">
+                <data value="50000">₦50,000.00</data>
+              </p>
 
-            <button type="button">Add to Cart</button>
+              <button type="button">Add to Cart</button>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="product-card">
+            <figure>
+              <img src="images/product5.jpg" alt="micellar cleanser">
+            </figure>
+
+            <div class="product-info">
+              <h3>Micellar Cleanser</h3>
+
+              <p>Effortlessly removes dirt and makeup while maintaining your skin's natural moisture.</p>
+
+              <p class="product-price">
+                <data value="8000">₦8,000.00</data>
+              </p>
+
+              <button type="button">Add to Cart</button>
+            </div>
           </article>
         </li>
 
@@ -172,4 +184,5 @@
     <p>&copy; 2026 Glow & Co. All rights reserved.</p>
   </footer>
 </body>
+
 </html>
