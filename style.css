@@ -32,7 +32,6 @@ nav {
 .logo {
   text-decoration: none;
   color: #30332E;
-  font-weight: bold;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -53,7 +52,7 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 
 nav ul li a {
@@ -72,7 +71,6 @@ nav ul li a:hover {
 
 .hero {
   display: flex;
-  align-items: top;
   text-align: left;
   padding: 80px;
   color: #30332E;
@@ -156,6 +154,7 @@ nav ul li a:hover {
 }
 
 .product-card img {
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -237,7 +236,7 @@ nav ul li a:hover {
   color: #606060;
 }
 
-#about > p {
+#about>p {
   font-size: 16px;
   line-height: 1.7;
   max-width: 800px;
@@ -249,8 +248,93 @@ nav ul li a:hover {
 }
 
 #contact {
-  padding: 5px;
+  padding: 10px;
   background-color: #30332E;
   color: #F8F6F0;
   text-align: center;
+}
+
+
+/* responsive styling */
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 20px 25px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  .hero {
+    padding: 60px;
+  }
+
+  #products,
+  #about {
+    padding: 40px 25px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  nav {
+    padding: 15px;
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+
+  .brand-tagline {
+    font-size: 10px;
+  }
+
+  nav ul {
+    gap: 6px;
+  }
+
+  nav ul li a {
+    white-space: nowrap;
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .logo {
+    flex-shrink: 0;
+  }
+
+  .announcement {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    padding: 8px 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 15px;
+  }
+
+  .hero-eyebrow {
+    font-size: 12px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content p:not(.hero-eyebrow) {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #products-heading {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  .section-header p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
 }
